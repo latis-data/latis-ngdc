@@ -15,4 +15,6 @@ To build a war file to be deployed to your app server, go to the latis-ngdc dire
 
 ./gradlew war
 
+If you want to make eclipse projects out of these, run "./gradlew eclipse" then import them.
+
 More documentation coming soon to https://github.com/dlindhol/LaTiS/wiki
