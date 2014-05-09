@@ -11,6 +11,5 @@ repositories {
 
 dependencies {
     compile project(":latis-netcdf")
-    compile fileTree(dir: 'lib', include: '*.jar')
 }
 
