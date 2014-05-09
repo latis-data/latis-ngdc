@@ -1,0 +1,16 @@
+apply plugin: 'war'
+apply plugin: 'scala'
+apply plugin: 'eclipse-wtp'
+
+repositories {
+    maven {
+      url "https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":latis-netcdf")
+    compile fileTree(dir: 'lib', include: '*.jar')
+}
+

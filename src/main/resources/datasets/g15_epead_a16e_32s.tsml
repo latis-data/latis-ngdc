@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsml>
+  <dataset name="g15_epead_a16e_32s">
+
+    <adapter class="latis.reader.tsml.NetcdfAdapter"
+             location="http://satdat.ngdc.noaa.gov/sem/goes/data/new_full/2014/04/goes15/netcdf/g15_epead_a16e_32s_20140401_20140401.nc"/>
+             
+    <time name="time_tag"/>
+    <real name="A1E_CR"   units="counts/s" />
+    <real name="A1E_FLUX" units="a/(cm^2 s sr MeV)" />
+             
+    <?select A1E_CR>0?>
+  </dataset>
+</tsml>   
